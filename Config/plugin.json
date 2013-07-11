@@ -1,0 +1,14 @@
+{
+	"name": "Decorz",
+	"description": "Decoration photos for terms and indexs views",
+
+	"author": "Juraj Jancuska",
+	"authorEmail": "jjancuska@gmail.com",
+	"authorUrl": "",
+
+	"dependencies": {
+		"plugins": [
+			"Image2"
+		]
+	}
+}
