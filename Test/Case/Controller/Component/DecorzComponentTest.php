@@ -75,8 +75,8 @@ class DecorzComponentTest extends CroogoTestCase {
         $this->DecorzComponent->files = array($path);   
         $expected = $path;
 
-        $this->Controller->request->params['type'] = 'node';
-        $this->Controller->request->params['action'] = 'index';
+        $this->Controller->request->params['named']['type'] = 'node';
+        $this->Controller->action = 'index';
         $this->DecorzComponent->beforeRender($this->Controller);
         $this->assertEqual($this->Controller->viewVars['Decorz']['server_path'], $expected);     
     }
@@ -88,9 +88,9 @@ class DecorzComponentTest extends CroogoTestCase {
         $this->DecorzComponent->files = array($path);   
         $expected = $path;
 
-        $this->Controller->request->params['type'] = 'node';
-        $this->Controller->request->params['action'] = 'term';
-        $this->Controller->request->params['slug'] = 'term_slug';
+        $this->Controller->request->params['named']['type'] = 'node';
+        $this->Controller->action = 'term';
+        $this->Controller->request->params['named']['slug'] = 'term_slug';
         $this->DecorzComponent->beforeRender($this->Controller);
         $this->assertEqual($this->Controller->viewVars['Decorz']['server_path'], $expected);     
     }    
@@ -102,8 +102,8 @@ class DecorzComponentTest extends CroogoTestCase {
         $this->DecorzComponent->files = array($path);   
         $expected = $path;
 
-        $this->Controller->request->params['type'] = 'node';
-        $this->Controller->request->params['action'] = 'index';
+        $this->Controller->request->params['named']['type'] = 'node';
+        $this->Controller->action = 'index';
         $this->DecorzComponent->beforeRender($this->Controller);
         $this->assertEqual($this->Controller->viewVars['Decorz']['server_path'], $expected);     
     }    

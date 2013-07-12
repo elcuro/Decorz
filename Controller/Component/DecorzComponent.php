@@ -78,12 +78,12 @@ class DecorzComponent extends Component {
  **/
     protected function _indexPaths() {
 
-        $type = $this->controller->request->params['type'];
+        $type = $this->controller->request->params['named']['type'];
         $files = array(
             'index_'.$type.'.'.$this->ext,
             'index.'.$this->ext
         );
-        
+
         return $files;
     }
 
@@ -94,8 +94,8 @@ class DecorzComponent extends Component {
  **/
     protected function _termPaths() {
 
-        $term = $this->controller->request->params['slug'];
-        $type = $this->controller->type;
+        $term = $this->controller->request->params['named']['slug'];
+        $type = $this->controller->request->params['named']['type'];
         $files = array(
             'term_'.$term.'.'.$this->ext,
             'term_'.$type.'.'.$this->ext,
@@ -112,8 +112,8 @@ class DecorzComponent extends Component {
  **/
     protected function _viewPaths() {
 
-        $slug = $this->controller->request->params['slug'];
-        $type = $this->controller->type;
+        $slug = $this->controller->request->params['named']['slug'];
+        $type = $this->controller->request->params['named']['type'];
         $files = array(
             'view_'.$slug.'.'.$this->ext,
             'view_'.$type.'.'.$this->ext,
