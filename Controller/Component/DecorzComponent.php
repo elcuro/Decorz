@@ -65,7 +65,7 @@ class DecorzComponent extends Component {
             if ($filename = $this->_fallback($paths)) {
                 $this->controller->set('Decorz', array(
                     'server_path' => $this->path.$filename,
-                    'relative_path' => '/'.$filename)
+                    'relative_path' => '/uploads/'.$filename)
                 );
             }
         }
