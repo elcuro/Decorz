@@ -20,17 +20,17 @@ Image extension and prefix can be changed in bootstrap
 ### Index
  * `decorz_index_type.jpg`
  * `decorz_index.jpg`
- * `default.jpg`
+ * `decorz_default.jpg`
 
 ### Term
  * `decorz_term_slug.jpg`
  * `decorz_term_type.jpg`
  * `decorz_term.jpg`
- * `defualt.jpg`
+ * `decorz_defualt.jpg`
 
 ### View
  * `decorz_view_slug.jpg`
  * `decorz_view_type.jpg`
  * `decorz_view.jpg`
- * `default.jpg`
+ * `decorz_default.jpg`
 
